@@ -1332,7 +1332,7 @@ body {
 
 .smile {
   position: relative; /* Ensure a stacking context for z-index to work */
-  padding-bottom: 3rem;
+  
 }
 
 .smile * {
@@ -1342,7 +1342,7 @@ body {
   font-style: italic;
   color: #f9cccc;
   margin: 0;
-  padding-bottom: 5rem;
+  padding-bottom: 10px;
   z-index: 1; /* Ensure the styles are applied only within the .smile div */
 }
 
