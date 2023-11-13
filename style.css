@@ -18,6 +18,7 @@ body {
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
+  margin: 0;
 }
 
 .night {
@@ -1316,6 +1317,39 @@ body {
   }
 }
 .container * {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  perspective: 1000px;
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
+
+
+}
+
+.smile {
+  position: relative; /* Ensure a stacking context for z-index to work */
+}
+
+.smile * {
+  text-align: center;
+   font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-style: italic;
+  color: #f9cccc;
+  margin: 0;
+  padding: 20px;
+  z-index: 1; /* Ensure the styles are applied only within the .smile div */
+}
+
+.smile h1 {
+  padding-right: 5rem;
+  font-size: 2em;
+  z-index: 2;
+  text-align: center;
+  align-items: flex-start;
+  letter-spacing: 2px;
 }
